@@ -6,3 +6,8 @@
 (đưa toàn bộ file working directory về vùng staging)
 - git commit -m"messeage": lưu lại (đóng gói) các file trong vùng chờ thành một phiên bản chính thức vào lịch sử Git trên máy tính, phần message là phần mô tả nhanh
 (tạo 1 commit mới nội dung <message>)
+
+2.
+- working directory: file2, file3
+- staging: rỗng
+- repository: file1
