@@ -1,0 +1,8 @@
+- git init: khởi tạo một kho lưu trữ (repository) Git mới trên máy tính cục bộ (local)
+(khởi tạo thư mục được quản lý bởi git)
+- git add <file_name>: đưa file cụ thể vào vùng chờ (staging area) trên máy tính
+(thêm file vào vùng staging)
+- git add .: tương tự như lệnh trên, nhưng lệnh này gom tất cả các file vừa tạo hoặc chỉnh sửa vào vùng chờ trên máy tính
+(đưa toàn bộ file working directory về vùng staging)
+- git commit -m"messeage": lưu lại (đóng gói) các file trong vùng chờ thành một phiên bản chính thức vào lịch sử Git trên máy tính, phần message là phần mô tả nhanh
+(tạo 1 commit mới nội dung <message>)
