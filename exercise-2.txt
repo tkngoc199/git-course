@@ -48,7 +48,7 @@ Chạy lệnh git reset Head~1
 3.
 Tạo folder lesson-3-git
 Chạy lệnh git init
-- vùng working: lesson-3-git
+- vùng working: không có gì
 - vùng staging: không có gì
 - vùng repository: không có gì
 Tạo file1.txt, file2.txt, oops/file3.txt
@@ -56,14 +56,14 @@ Tạo file1.txt, file2.txt, oops/file3.txt
 - vùng staging: không có gì
 - vùng repository: không có gì
 Thêm .gitignore, thêm vào 2 dòng: file1.txt, oops/
-- vùng working: file2.txt
+- vùng working: file2.txt, .gitignore
 - vùng staging: không có gì
 - vùng repository: không có gì
 Chạy lệnh git add .
 - vùng working: không có gì
-- vùng staging: file2.txt
+- vùng staging: file2.txt, .gitignore
 - vùng repository: không có gì
 Chạy lệnh git commit -m"init project"
 - vùng working: không có gì
 - vùng staging: không có gì
-- vùng repository: file2.txt
+- vùng repository: file2.txt, .gitignore
