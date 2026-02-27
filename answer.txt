@@ -1,0 +1,4 @@
+- Enmail:
+git config --global user.mail "<email>"
+- Name:
+git config --global user.name "<name>"
