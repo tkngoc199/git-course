@@ -1,8 +1,69 @@
 1.
 git commit --amend: để chỉnh sửa nội dung commit gần nhất
+(sửa commit msg gần nhất, đi vào giao diện của VIM)
 git commit --amend -m"<message>": sửa trực tiếp message của commit cuối cùng
-git restore --staged <file>:là từ staging <file> -> working directory
+(sửa commit msg gần nhất, không đi vào giao diện của VIM, sửa trực tiếp msg)
+git restore --staged <file>:là di chuyển file từ staging <file> -> working
 git reset HEAD~1: lấy commit số 1 từ repository -> working directory 
 
 2.
-- tạo 3 file: 
+Tạo 3 file: file1,file2, file3
+- vùng local: file1, file2, file3
+- vùng working: không có gì
+- vùng staging: không có gì
+- vùng repository: không có gì
+Chạy lệnh: git init
+- vùng working: file1, file2, file3
+- vùng staging: không có gì
+- vùng repository: không có gì
+Chạy lệnh git commit -m"init project"
+- vùng working: file1, file2, file3
+- vùng staging:
+- vùng repository:
+Chạy lệnh git add file1
+- vùng working: file2, file3
+- vùng staging: file1
+- vùng repository: không có gì
+Chạy lệnh: git commit -m"add file"
+- vùng working: file2, file3
+- vùng staging: không có gì
+- vùng repository: file1
+Chạy lệnh git add .
+- vùng working: không có gì
+- vùng staging: file2, file3
+- vùng repository: file1
+Chạy lệnh git restore --staged file 2
+- vùng working: file2
+- vùng staging: file3
+- vùng repository: file1
+Chạy lệnh git commit -m"add all files"
+- vùng working: file2
+- vùng staging: không có gì
+- vùng repository: file1, file3
+Chạy lệnh git reset Head~1
+- vùng working: file2, file3
+- vùng staging: không có gì
+- vùng repository: file1
+
+3.
+Tạo folder lesson-3-git
+Chạy lệnh git init
+- vùng working: lesson-3-git
+- vùng staging: không có gì
+- vùng repository: không có gì
+Tạo file1.txt, file2.txt, oops/file3.txt
+- vùng working: file1.txt, file2.txt, oops/file3.txt
+- vùng staging: không có gì
+- vùng repository: không có gì
+Thêm .gitignore, thêm vào 2 dòng: file1.txt, oops/
+- vùng working: file2.txt
+- vùng staging: không có gì
+- vùng repository: không có gì
+Chạy lệnh git add .
+- vùng working: không có gì
+- vùng staging: file2.txt
+- vùng repository: không có gì
+Chạy lệnh git commit -m"init project"
+- vùng working: không có gì
+- vùng staging: không có gì
+- vùng repository: file2.txt
